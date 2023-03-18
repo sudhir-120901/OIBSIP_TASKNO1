@@ -1,0 +1,302 @@
+* {
+
+  padding: 5px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+}
+
+img {
+  height: 500px;
+  width: 1100px;
+}
+#header {
+  height: 750px;  
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #262626;
+color: white;
+}
+
+.logo {
+  width: 140px;
+}
+
+.port {
+  width: 20%;
+  color: white;
+  font-style: italic;
+  font-size: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 0px;
+
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  padding-left: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  padding-left: 180px;
+}
+
+/* Caption text */
+.text {
+  padding-right: 500px;
+  padding-bottom: -1000px;
+  color: blueviolet;
+  font-size: 15px;
+  padding-bottom: 100px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/*   ***************************************  /////////////////*/
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+#certificates {
+  padding: 40px 0;
+  padding-top: 100px;
+  background-image: url('https://th.bing.com/th/id/R.65d9d59ef313a7a31479649d184d2f8a?rik=QkWG2dLqq7Y6Nw&riu=http%3a%2f%2fwww.soulvacationsindia.com%2fimages%2fmonuments_delhi_1.jpg&ehk=GD6f9P3kD0sE9eyqmpLyjT4tqaTqV8EYLeUVc%2bNMCek%3d&risl=&pid=ImgRaw&r=0');
+  height: 750px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.certificates-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.certificates-list div {
+  background:rgba(0, 0, 0, 0.529);
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+
+}
+
+.certificates-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.certificates-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.certificates-list div:hover {
+  background: #ff004f;
+  transform: translate(-10px);
+}
+
+/*----------------------------*/
+#contact {
+  padding-top: 55px;
+  height: auto;
+  background-image: url('https://wallpapercave.com/wp/wp6944404.jpg');
+  opacity: 90%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.contact-left {
+  padding-left: 100px;
+  flex-basis: 45%
+}
+
+.contact-right {
+  flex-basis: 40%
+  
+}
+
+.contact-leftp {
+  margin-top: 30px;
+}
+
+.contact-left p {
+  color:red;
+  margin-right: 15px;
+  font-weight: 00;
+  font-size: 25px;
+  opacity: 100%;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: white;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background: #ff004f;
+}
+
+.contact-right form {
+  width: 90%;
+
+}
+
+form input,form textarea {
+  width: 90%;
+  border: 0;
+  outline: none;
+  background: black;
+  padding: 15px;
+  margin: 15px 0;
+  color:black;
+  font-size: 15px;
+  border-radius: 6px;
+  opacity: 80%;
+}
+
+form .btn2 {
+  padding: 14px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.contact-right{
+  font-weight: 500; 
+  color: black;
+}
+/* ------------------------*/
+
+
+
+
+
+.content {
+	background: #000;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.box ul1 li1 {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	list-style: none;
+	opacity: 0;
+	background: radial-gradient(deepskyblue, transparent, transparent);
+	bottom: 0;
+	left: 10vw;
+	animation: animate 15s linear infinite;
+}
+.box ul1 li1:nth-child(2) {
+	left: 36vw;
+	animation-delay: 2s;
+}
+.box ul1 li1:nth-child(3) {
+	left: 22vw;
+	animation-delay: 4s;
+}
+.box ul1 li1:nth-child(4) {
+	left: 56vw;
+	animation-delay: 6s;
+}
+.box ul1 li1:nth-child(5) {
+	left: 76vw;
+	animation-delay: 4s;
+}
+.box ul1 li1:nth-child(6) {
+	left: 80vw;
+	animation-delay: 8s;
+}
+@keyframes animate {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+		bottom: 0;
+	}
+	100% {
+		transform: scale(10);
+		opacity: 0;
+		bottom: 100vh;
+	}
+}
